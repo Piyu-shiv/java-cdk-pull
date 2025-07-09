@@ -1,9 +1,23 @@
 #!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib';
 import { CdkPullDashboardStack } from '../lib/cdk-pull-dashboard-stack';
+// import { LogForwardingStack } from '../lib/LogForwardingStack';
+
+import dotenv from 'dotenv'
+dotenv.config({ path: 'D://work//typescript//cdk-pull-dashboard//.env'});
 
 const app = new cdk.App();
 new CdkPullDashboardStack(app, 'CdkPullDashboardStack', {
+  env: {
+    account: '873868730177',
+    region: 'eu-north-1',
+  }})
+  // new LogForwardingStack(app, 'LogForwardingStack', {
+  //   env: {
+  //     account: '873868730177',
+  //     region: 'eu-north-1',
+  //   }})
+
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
@@ -17,4 +31,3 @@ new CdkPullDashboardStack(app, 'CdkPullDashboardStack', {
   // env: { account: '123456789012', region: 'us-east-1' },
 
   /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
-});
