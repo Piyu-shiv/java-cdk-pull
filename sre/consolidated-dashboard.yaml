@@ -1,0 +1,82 @@
+accounts:
+  - id: 454545
+    dashBoardName: 'UI-PORTAL'
+    nameSpace: 
+      - 'AWS/Lambda':
+           - 'name1'
+           - 'name2'
+           - 'name3'
+      - 'ECS/ContainerInsight':
+           clusterName: 'cluster'
+    customMetricsNameSpace:
+      latency:
+        - metricName: 'FUND_DETAILS_SERVICE_RESPOnSE_TIME'
+          dimensions:
+            ResponseTime: 'FUND-DETAILS'
+          stat: 'sampleCount'
+          title: 'fund details service response time'  
+        - metricName: 'FUND_DETAILS_SERVICE_RESPOnSE_TIME2'
+          dimensions:
+            ResponseTime: 'FUND-DETAILS'
+          stat: 'sampleCount'
+          title: 'fund details service response time'  
+        - metricName: 'FUND_DETAILS_SERVICE_RESPOnSE_TIME3'
+          dimensions:
+            ResponseTime: 'FUND-DETAILS'
+          stat: 'sampleCount'
+          title: 'fund details service response time'  
+        - metricName: 'FUND_DETAILS_SERVICE_RESPOnSE_TIME4'
+          dimensions:
+            ResponseTime: 'FUND-DETAILS'
+          stat: 'sampleCount'
+          title: 'fund details service response time'     
+
+  - id: 7485
+    dashBoardName: 'campaign-tracking-aws'
+    nameSpace:
+      - ecsClusters:
+          clustername: 'cluster-name'
+          serviceName: 'fundData'
+    customMetricsNameSpace:
+      latency:
+        - metricName: 'FUND_DETAILS_SERVICE_RESPOnSE_TIME'
+          dimensions:
+            ResponseTime: 'FUND-DETAILS'
+          stat: 'sampleCount'
+          title: 'fund details service response time'  
+        - metricName: 'FUND_DETAILS_SERVICE_RESPOnSE_TIME2'
+          dimensions:
+            ResponseTime: 'FUND-DETAILS'
+          stat: 'sampleCount'
+          title: 'fund details service response time'  
+        - metricName: 'FUND_DETAILS_SERVICE_RESPOnSE_TIME3'
+          dimensions:
+            ResponseTime: 'FUND-DETAILS'
+          stat: 'sampleCount'
+          title: 'fund details service response time'  
+        - metricName: 'FUND_DETAILS_SERVICE_RESPOnSE_TIME4'
+          dimensions:
+            ResponseTime: 'FUND-DETAILS'
+          stat: 'sampleCount'
+          title: 'fund details service response time'  
+      RED:
+        - metricName: 'FUND_DETAILS_SERVICE_RESPOnSE_TIME'
+          dimensions:
+            ResponseTime: 'FUND-DETAILS'
+          stat: 'sampleCount'
+          title: 'fund details service response time'  
+        - metricName: 'FUND_DETAILS_SERVICE_RESPOnSE_TIME2'
+          dimensions:
+            ResponseTime: 'FUND-DETAILS'
+          stat: 'sampleCount'
+          title: 'fund details service response time'  
+        - metricName: 'FUND_DETAILS_SERVICE_RESPOnSE_TIME3'
+          dimensions:
+            ResponseTime: 'FUND-DETAILS'
+          stat: 'sampleCount'
+          title: 'fund details service response time'  
+        - metricName: 'FUND_DETAILS_SERVICE_RESPOnSE_TIME4'
+          dimensions:
+            ResponseTime: 'FUND-DETAILS'
+          stat: 'sampleCount'
+          title: 'fund details service response time'                  
